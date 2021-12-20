@@ -1,0 +1,9 @@
+.idea
+
+target
+/project/project
+/project/target
+/logs
+application.conf
+
+/conf/logback.xml

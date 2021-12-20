@@ -1,0 +1,16 @@
+@(employees : List[models.Employee])
+
+@main("Employee") {
+    <section id="content">
+        <div class="wrapper doc">
+            <h1>Employee page</h1>
+            <ul>
+               @for(e <- employees) {
+                   <li>ID: @e.getId()</li>
+                   <li>Name: @e.getName()</li>
+                   <li>Passport: @e.getPassport()</li>
+                }
+            </ul>
+        </div>
+    </section>
+}
